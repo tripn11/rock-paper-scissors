@@ -1,0 +1,30 @@
+#rules-container {
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+
+    h2 {
+        padding-top: 6rem;
+        text-align: center;
+    }
+
+    #rules {
+        height: fit-content;
+        width: 100%;
+        margin-top: 30%;
+    }
+
+    ion-icon {
+        position: absolute;
+        bottom: 5vh;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        font-size: 1.5rem;
+        color: gray;
+        cursor: pointer;
+    }
+}

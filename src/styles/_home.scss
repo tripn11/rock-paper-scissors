@@ -1,0 +1,141 @@
+#home {
+    padding:1.5rem;
+
+    >button {
+        background-color: transparent;
+        color:white;
+        padding: 0.6rem 2.5rem;
+        border-radius: 0.4rem;
+        -webkit-border-radius: 0.4rem;
+        -moz-border-radius: 0.4rem;
+        -ms-border-radius: 0.4rem;
+        -o-border-radius: 0.4rem;
+        border: 0.1rem solid white;
+        display: block;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+}
+
+#choices {
+    position:relative; 
+    margin-top: 15vh;
+    height: 50vh;
+
+    >div {
+        position: absolute;
+        cursor: pointer;
+    }
+
+    >div:first-child {
+        width: 100%;
+        height: 100%;
+
+        #triangle {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            transform: scale(0.6);
+            -webkit-transform: scale(0.6);
+            -moz-transform: scale(0.6);
+            -ms-transform: scale(0.6);
+            -o-transform: scale(0.6);
+        }
+    }
+
+    #paper-container {
+        background-color: white;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        width: 7rem;
+        height: 7rem;
+        top: 4%;
+        left: 4%;
+        border: 0.8rem solid;
+        border-color: hsl(230, 89%, 62%) hsl(230, 89%, 65%);
+        box-shadow: 0 0.3rem darken($color: hsl(230, 89%, 65%), $amount: 10), inset 0 0.3rem darken($color: white, $amount: 10) ;
+
+
+        #paper {
+            color: hsl(237, 49%, 15%);
+            transform: translate(1.1rem, 1rem);
+            -webkit-transform: translate(1.1rem, 1rem);
+            -moz-transform: translate(1.1rem, 1rem);
+            -ms-transform: translate(1.1rem, 1rem);
+            -o-transform: translate(1.1rem, 1rem);
+        }
+    }   
+
+    #scissors-container {
+        background-color: white;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        width: 7rem;
+        height: 7rem;
+        top: 4%;
+        right: 4%;
+        border: 0.8rem solid;
+        border-color: hsl(39, 89%, 49%) hsl(40, 84%, 53%);
+        box-shadow: 0 0.3rem darken($color: hsl(40, 84%, 53%), $amount: 10), inset 0 0.3rem darken($color: white, $amount: 10) ;
+
+
+
+        #scissors {
+            color: hsl(237, 49%, 15%);
+            transform: translate(1.1rem, 1rem);
+            -webkit-transform: translate(1.1rem, 1rem);
+            -moz-transform: translate(1.1rem, 1rem);
+            -ms-transform: translate(1.1rem, 1rem);
+            -o-transform: translate(1.1rem, 1rem);
+        }
+    }
+
+
+    #rock-container {
+        background-color: white;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        width: 7rem;
+        height: 7rem;
+        top: 40%;
+        left: 50%;
+        border: 0.8rem solid;
+        border-color: hsl(349, 71%, 52%) hsl(349, 70%, 56%);
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        box-shadow: 0 0.3rem darken($color: hsl(349, 70%, 56%), $amount: 10), inset 0 0.3rem darken($color: white, $amount: 10) ;
+
+
+        #rock {
+            color: hsl(237, 49%, 15%);
+            transform: translate(1.1rem, 1rem);
+            -webkit-transform: translate(1.1rem, 1rem);
+            -moz-transform: translate(1.1rem, 1rem);
+            -ms-transform: translate(1.1rem, 1rem);
+            -o-transform: translate(1.1rem, 1rem);
+        }
+    } 
+}
+
+// @media only screen and (min-width:400px) {
+//     #choice {
+//         width: 30%;
+//         margin: 0 auto;
+//     }
+//     #choices > div:first-child #triangle {
+//         left:1rem;
+//     }
+// }

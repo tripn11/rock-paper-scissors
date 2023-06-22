@@ -1,0 +1,44 @@
+#scoreboard {
+    border: 1px solid hsl(217, 16%, 45%);
+    border-width: 0.2rem;
+    margin-top: 1.5rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0.3rem;
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+
+    >div:first-child {
+        color:white;
+        padding: 0.5rem 0 0.5rem 1rem;
+        font-size: 1.2rem;
+        
+        >p{
+            line-height: 0.9rem;
+        }
+    }
+
+    >div:last-child {
+        background-color: white;
+        padding: 0.5rem 1.4rem;
+        border-radius: 0.3rem;
+        -webkit-border-radius: 0.3rem;
+        -moz-border-radius: 0.3rem;
+        -ms-border-radius: 0.3rem;
+        -o-border-radius: 0.3rem;
+
+        >p:first-child {
+            font-size: 0.6rem;
+            color: hsl(229, 64%, 46%);
+        }
+
+        >p:last-child {
+            font-size: 2rem;
+            font-weight: 700;
+            color:hsl(229, 25%, 31%);
+        }
+    }
+}

@@ -1,0 +1,125 @@
+#result {
+    padding: 1.5rem;
+
+    #display {
+        margin-top: 12vh;
+        display: flex;
+        justify-content: space-around;
+
+
+        >div {
+            .container-rock {
+                background-color: white;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                width: 7rem;
+                height: 7rem;
+                border: 0.8rem solid;
+                border-color: hsl(349, 71%, 52%) hsl(349, 70%, 56%);
+                box-shadow: 0 0.3rem darken($color: hsl(349, 70%, 56%), $amount: 10), inset 0 0.3rem darken($color: white, $amount: 10) ;
+
+                #rock {
+                    color: hsl(237, 49%, 15%);
+                    transform: translate(1.1rem, 1rem);
+                    -webkit-transform: translate(1.1rem, 1rem);
+                    -moz-transform: translate(1.1rem, 1rem);
+                    -ms-transform: translate(1.1rem, 1rem);
+                    -o-transform: translate(1.1rem, 1rem);
+                }
+            }
+
+            .container-paper {
+                background-color: white;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                width: 7rem;
+                height: 7rem;
+                border: 0.8rem solid;
+                border-color: hsl(230, 89%, 62%) hsl(230, 89%, 65%);
+                box-shadow: 0 0.3rem darken($color: hsl(230, 89%, 65%), $amount: 10), inset 0 0.3rem darken($color: white, $amount: 10) ;
+
+                #paper {
+                    color: hsl(237, 49%, 15%);
+                    transform: translate(1.1rem, 1rem);
+                    -webkit-transform: translate(1.1rem, 1rem);
+                    -moz-transform: translate(1.1rem, 1rem);
+                    -ms-transform: translate(1.1rem, 1rem);
+                    -o-transform: translate(1.1rem, 1rem);
+                }
+            }
+
+            .container-scissors {
+                background-color: white;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                width: 7rem;
+                height: 7rem;
+                border: 0.8rem solid;
+                border-color: hsl(39, 89%, 49%) hsl(40, 84%, 53%);
+                box-shadow: 0 0.3rem darken($color: hsl(40, 84%, 53%), $amount: 10), inset 0 0.3rem darken($color: white, $amount: 10) ;
+
+                #scissors {
+                    color: hsl(237, 49%, 15%);
+                    transform: translate(1.1rem, 1rem);
+                    -webkit-transform: translate(1.1rem, 1rem);
+                    -moz-transform: translate(1.1rem, 1rem);
+                    -ms-transform: translate(1.1rem, 1rem);
+                    -o-transform: translate(1.1rem, 1rem);
+                }
+            }
+
+            >p {
+                margin-top: 4vh;
+                color: white;
+            }
+        }
+    }
+
+    >div:last-of-type {
+        width: fit-content;
+        margin: 3rem auto 1rem;
+        color: white;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    button:first-of-type {
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+        color: hsl(229, 25%, 31%);
+        padding: 0.6rem 2.5rem;
+        font-weight: 700;
+        border: 1px solid transparent;
+        border-radius: 0.5rem;
+        -webkit-border-radius: 0.5rem;
+        -moz-border-radius: 0.5rem;
+        -ms-border-radius: 0.5rem;
+        -o-border-radius: 0.5rem;
+        cursor: pointer;
+    }
+
+    button:last-of-type {
+        background-color: transparent;
+        color:white;
+        padding: 0.6rem 2rem;
+        border-radius: 0.4rem;
+        -webkit-border-radius: 0.4rem;
+        -moz-border-radius: 0.4rem;
+        -ms-border-radius: 0.4rem;
+        -o-border-radius: 0.4rem;
+        border: 0.1rem solid white;
+        display: block;
+        margin: 3rem auto;
+        cursor: pointer;
+    }
+}
