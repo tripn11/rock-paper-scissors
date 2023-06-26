@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default () => (
+const Scoreboard = () => (
     <div id='scoreboard'>
         <div>
             <p>ROCK</p>
@@ -13,3 +13,5 @@ export default () => (
         </div>
     </div>
 )
+
+export default Scoreboard;

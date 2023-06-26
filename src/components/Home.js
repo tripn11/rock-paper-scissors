@@ -11,7 +11,7 @@ import Rules from '../images/ImageRules';
 Modal.setAppElement('body');
 
 
-export default () => {
+const Home = () => {
     const navigate = useNavigate();
     const [modalState, setModalState] = useState(false)
 
@@ -62,3 +62,6 @@ export default () => {
         </div>
     )
 }
+
+
+export default Home;

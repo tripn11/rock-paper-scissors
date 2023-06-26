@@ -4,7 +4,7 @@ import Home from '../components/Home';
 import Result from '../components/Result';
 
 
-export default () => ( 
+const AppRouter = () => ( 
     <BrowserRouter> 
         <Routes>
             <Route path='/' element={<Home />} />
@@ -12,3 +12,5 @@ export default () => (
         </Routes>
     </BrowserRouter>    
 )
+
+export default AppRouter;

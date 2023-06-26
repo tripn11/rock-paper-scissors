@@ -12,7 +12,7 @@ import Rules from '../images/ImageRules';
 Modal.setAppElement('body');
 
 
-export default () => {
+const Result = () => {
     const [ computer, setComputer] = useState(null);
     const [ announce, setAnnounce] = useState(null);
     const [modalState, setModalState] = useState(false)
@@ -106,3 +106,5 @@ export default () => {
         </div>
     )
 }
+
+export default Result;
