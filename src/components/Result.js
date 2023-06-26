@@ -1,13 +1,21 @@
 import React, { useEffect, useState } from 'react';
+import Modal from 'react-modal';
+
 import { useNavigate } from 'react-router-dom';
 import Scoreboard from './Scoreboard';
 import Paper from '../images/IconPaper';
 import Rock from '../images/IconRock';
 import Scissors from '../images/IconScissors';
+import Rules from '../images/ImageRules';
+
+
+Modal.setAppElement('body');
+
 
 export default () => {
     const [ computer, setComputer] = useState(null);
     const [ announce, setAnnounce] = useState(null);
+    const [modalState, setModalState] = useState(false)
     const navigate = useNavigate();
 
     useEffect(()=>{
@@ -53,6 +61,14 @@ export default () => {
         localStorage.setItem('scores',score.toString())
     }
 
+    const openModal = () => {
+        setModalState(true);
+    }
+
+    const closeModal = () => {
+        setModalState(false);
+    }
+
     return (
         <div id='result'>
             <Scoreboard />
@@ -76,7 +92,17 @@ export default () => {
                 {announce === 'draw' && <div>DRAW</div>}
             </div>
             <button onClick={()=>navigate('/')}>PLAY AGAIN</button>
-            <button onClick={()=>navigate('/rules')}>RULES</button>
+            <button onClick={openModal}>RULES</button>
+
+            <Modal
+                isOpen={modalState}
+                className='modal-content'
+                overlayClassName='modal-overlay'
+            >
+                <h2>RULES</h2>
+                <Rules />
+                <ion-icon onClick={closeModal} name="close-outline"></ion-icon>
+            </Modal>
         </div>
     )
 }

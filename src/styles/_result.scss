@@ -123,3 +123,53 @@
         cursor: pointer;
     }
 }
+
+@media only screen and (min-width:1100px) {
+    #result {
+        #display {
+            margin-top: 12vh;
+
+            >div {
+                display: flex;
+                flex-direction: column-reverse;
+
+                p {
+                    margin-bottom: 2rem;
+                    text-align: center;
+                }
+            }
+        }
+
+        > div:last-of-type {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            -webkit-transform: translate(-50%,-50%);
+            -moz-transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+            -o-transform: translate(-50%,-50%);
+        }
+
+        button:first-of-type {
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            -webkit-transform: translate(-50%,-50%);
+            -moz-transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+            -o-transform: translate(-50%,-50%);
+        }
+
+        button:first-of-type:hover {
+            color: red;
+        }
+
+        button:last-of-type {
+            position: absolute;
+            bottom:-5%;
+            right: 1%;
+        }
+    }
+}
